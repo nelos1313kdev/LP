@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+body {
+    font-family: 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "WanpakuRuika";
+    src: url("./fonts/WanpakuRuika.woff2") format("woff2"),
+        url("./fonts/WanpakuRuika.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.pre-container {
+    max-width: 1440px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 0;
+    transition: 0.2s;
+}
+
+/* Header Section */
+.header {
+    background-image: url('./見本市LP用-assets/header_back.png');
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: calc(9.718px + 1.408vw);
+}
+
+.header-s-bg {
+    display: none;
+}
+
+.header-bg {
+    /* transition: 0.3s; */
+    margin-top: 18%;
+    padding-inline: 20px;
+    width: 100%
+}
+
+.subtitle {
+    letter-spacing: -1px;
+    padding-top: 210px;
+    font-size: 48px;
+    color: #132c51;
+    margin-bottom: 17px;
+    font-weight: 700;
+
+}
+
+.main-title {
+    font-size: 65px;
+    font-weight: 800;
+    color: #132c51;
+    margin-bottom: 13px;
+    font-weight: 700;
+    text-shadow: 5px 3px 3px #f7e78b;
+    position: relative;
+    display: inline-block;
+}
+
+.main-title div {
+    display: inline-block;
+    position: relative;
+}
+
+/* First part of text (気軽に聞ける！) */
+.main-title div:first-child {
+    transform: rotate(-5deg);
+    transform-origin: bottom right;
+    margin-right: 3px;
+}
+
+/* Second part of text (すぐに役立つ！) */
+.main-title div:last-child {
+    transform: rotate(5deg);
+    transform-origin: bottom left;
+    margin-left: 3px;
+}
+
+.event-title {
+    font-size: 157px;
+    letter-spacing: 11px;
+    font-weight: 900;
+    color: #132c51;
+    /* margin: -25px 0; */
+    text-shadow: 7px 7px 7px #ffe551;
+}
+
+.event-details {
+    font-size: calc(1.338px + 4.977vw);
+    font-weight: 700;
+    color: #132c51;
+    /* margin: -85px 0; */
+}
+
+.header-title {
+    font-size: calc(-1.366px + 5.164vw);
+    margin-bottom: calc(9.437px + 2.817vw);
+}
+
+.datetime {
+    font-weight: 700;
+    color: #132c51;
+    margin-top: 15px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.cta-button {
+    width: 33.33333%;
+}
+
+.letter {
+    position: relative;
+}
+
+.cta-button-s {
+    display: none;
+    width: 33.33333%;
+    height: auto;
+}
+
+.cta-button:hover {
+    scale: 105%;
+    transform: translateY(-2px);
+}
+
+
+
+.contact-info {
+    font-size: calc(3.380px + 3.099vw);
+    font-weight: 600;
+    color: #132c51;
+    text-decoration-line: underline;
+    text-decoration-color: yellow;
+    text-decoration-thickness: calc(1.592px + 0.376vw);
+}
+
+/* Participants Section */
+.participants-section {
+    background: #f5ea36;
+    margin-top: calc(15.915px + 3.756vw);
+    width: 100%;
+    text-align: center;
+}
+
+.participants-title {
+    padding-top: 21px;
+    color: #333;
+    margin-inline: 50px;
+    margin-bottom: 10px;
+    width: calc(5.211px + 57.277vw);
+    height: auto;
+}
+
+.participants-subtitle {
+    letter-spacing: -1px;
+    font-size: calc(4.028px + 3.192vw);
+    font-weight: 600;
+    color: #132c51;
+    padding-bottom: calc(14.718px + 1.408vw);
+}
+
+/* Sponsors Grid */
+.sponsors-grid {
+    padding: calc(15.915px + 3.756vw) 0 0;
+    background: #2792c9;
+}
+
+.sponsors-grid>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.sponsor-card {
+    background: #e5f2ef;
+    padding: calc(-0.282px + 1.408vw);
+    /* margin-top: 50px; */
+    margin-bottom: calc(15.915px + 3.756vw);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-5px);
+    transition-duration: 1.5s;
+}
+
+.sponsor-logo {
+    font-family: 'WanpakuRuika', sans-serif;
+    font-size: calc(10.479px + 0.939vw);
+    font-weight: bold;
+    color: #2792c9;
+    margin-bottom: 10px;
+}
+
+.sponsor-description {
+    font-size: calc(9.887px + 0.563vw);
+    color: #132c51;
+    line-height: 1.4;
+}
+
+/* Featured Companies */
+.bg-img {
+    background-image: url('./見本市LP用-assets/pigk_back.png');
+    background-repeat: no-repeat;
+}
+
+.featured-section>div {
+    padding-top: calc(-11.127px + 5.634vw);
+}
+
+.featured-title {
+    margin: auto;
+    background: #f5ea36;
+    /* width: 110%; */
+    letter-spacing: -1px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: calc(1.568px + 3.662vw);
+    font-weight: 600;
+    color: #132c51;
+    margin-top: calc(-22.254px + 11.268vw);
+    margin-bottom: calc(2.958px + 1.878vw);
+
+}
+
+.featured-company {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+
+.featured-company:nth-of-type(4) {
+    margin-bottom: 0px;
+}
+
+.featured-company:nth-of-type(2) .company-info {
+    width: 45%;
+    text-align: left;
+}
+
+.featured-company:nth-of-type(4) .company-info {
+    width: 45%;
+    text-align: left;
+}
+
+.company-image {
+    width: 55%;
+    border-radius: 10px;
+    color: #666;
+}
+
+.company-image:hover {
+    scale: 103%;
+    transform: translateY(-5px);
+    transition-duration: 2s;
+
+}
+
+.company-info {
+    width: 45%;
+    text-align: right;
+}
+
+.company-info>div:nth-of-type(2) {
+    font-size: calc(8.571px + 1.488vw);
+    color: #132c51;
+    font-weight: 600;
+}
+
+.company-name {
+    font-size: calc(6.000px + 2.083vw);
+    font-weight: bold;
+    color: #132c51;
+}
+
+.company-image img:last-of-type {
+    display: none;
+}
+
+.company-description {
+    margin-top: 21px;
+    font-size: calc(7.286px + 0.744vw);
+    color: #3a4e6b;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* All Companies Grid */
+.all-companies {
+    background-image: url('./見本市LP用-assets/company_list_back.png');
+    background-repeat: no-repeat;
+    padding: calc(-11.408px + 7.042vw) 0px 0;
+}
+
+.companies-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+
+}
+
+.companies-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-inline: auto;
+    min-width: 1200px;
+}
+
+
+.company-item-red {
+    background: #fcf3f3;
+    font-family: 'WanpakuRuika', sans-serif;
+    padding: 5px 3px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 17px;
+    flex-shrink: 0;
+    font-weight: 700;
+    color: #132c51;
+    border: 3.9px solid #f3691e;
+    transition: all 0.3s ease;
+    align-items: center;
+    display: flex;
+    line-height: 1.19;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+    height: 90px;
+}
+
+.company-item-red:hover {
+    scale: 95%;
+    transition-duration: 1.5s;
+    cursor: pointer;
+}
+
+.company-item-green {
+    background: #fcf3f3;
+    font-family: 'WanpakuRuika', sans-serif;
+    padding: 5px 3px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 17px;
+    flex-shrink: 0;
+    font-weight: 700;
+    color: #132c51;
+    transition: all 0.3s ease;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.19;
+    margin-top: 15px;
+    border: 3.9px solid #2db861;
+    height: 90px;
+}
+
+.company-item-green:hover {
+    scale: 95%;
+    transition-duration: 1.5s;
+    cursor: pointer;
+}
+
+.company-item-blue {
+    background: #fcf3f3;
+    font-family: 'WanpakuRuika', sans-serif;
+    padding: 5px 3px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 17px;
+    flex-shrink: 0;
+    font-weight: 700;
+    color: #132c51;
+    transition: all 0.3s ease;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.19;
+    justify-content: center;
+    margin-top: 15px;
+    border: 3.9px solid #2792c9;
+    height: 90px;
+}
+
+.company-item-blue:hover {
+    scale: 95%;
+    transition-duration: 1.5s;
+    cursor: pointer;
+}
+
+.company-item-purple {
+    background: #fcf3f3;
+    font-family: 'WanpakuRuika', sans-serif;
+    padding: 5px 3px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 17px;
+    flex-shrink: 0;
+    font-weight: 700;
+    color: #132c51;
+    transition: all 0.3s ease;
+    align-items: center;
+    line-height: 1.19;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+    border: 3.9px solid #d656ed;
+    height: 90px;
+}
+
+.company-item-purple:hover {
+    scale: 95%;
+    transition-duration: 1.5s;
+    cursor: pointer;
+}
+
+.company-item:hover {
+    border-color: #4A90E2;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    margin-top: calc(12.394px + 4.695vw);
+    padding: 40px 0px 30px;
+    background-color: #132c51;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    color: white;
+    font-weight: 500;
+}
+
+.right {
+    color: white;
+    font-weight: 600;
+}
+
+.label {
+    font-size: calc(6.535px + 0.657vw);
+    margin-bottom: -7px;
+    color: #fcf3f3
+}
+
+.title {
+    font-size: calc(6.602px + 2.239vw);
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.contact {
+    font-size: calc(11.183px + 0.751vw);
+    transition: 0.2s;
+}
+
+.contact-2 {
+    font-size: calc(6px + 0.939vw);
+    transition: 0.2s;
+}
+
+.contact a {
+    color: #aad8ff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.yellow-box {
+    background-color: #f5e400;
+    color: #000000;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 4px;
+    font-size: calc(8.143px + 0.893vw);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+
+/* Responsive Design */
