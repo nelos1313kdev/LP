@@ -166,6 +166,9 @@ body {
     text-decoration-color: yellow;
     text-decoration-thickness: calc(1.592px + 0.376vw);
 }
+.contact-infohover {
+    scale:105%;
+}
 
 /* Participants Section */
 .participants-section {
